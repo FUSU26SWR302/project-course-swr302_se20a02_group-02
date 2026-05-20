@@ -5,7 +5,7 @@
 
 | Item | Description |
 |---|---|
-| Course |  SWR391|
+| Course |  SWR302|
 | Class | SE20A02  |
 | Semester | SU26 |
 | Group | 2 |
