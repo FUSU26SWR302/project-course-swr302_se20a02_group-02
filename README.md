@@ -10,7 +10,7 @@
 | Semester | SU26 |
 | Group | 2 |
 | Topic | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
-| Repository |swp391-su26-ai-audit-project-swp391_se20a02_group-02|
+| Repository |swr302-su26-ai-audit-project-swp391_se20a02_group-02|
 
 ---
 
