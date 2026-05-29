@@ -1,6 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/e_CNHJva)
 # SE AI Audit Project Template
 [JIRA Manager Project](https://haudccf14.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible&jql=assignee+%3D+empty+AND+parent+IN+%28SCRUM-57%2C+empty%2C+SCRUM-58%29&atlOrigin=eyJpIjoiOGRkNWIyYjRjNmFhNDE5OWI4NzNhZjcxZGViZDhjZTEiLCJwIjoiaiJ9)
+[Overleaf_PAPER](https://www.overleaf.com/read/fkjgjwmwktwc#a0e4b9)
 ## 1. Project Information
 
 | Item | Description |
