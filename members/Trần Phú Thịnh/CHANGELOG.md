@@ -4,32 +4,23 @@
 
 File này dùng để ghi lại các thay đổi quan trọng trong quá trình thực hiện bài tập, lab, assignment hoặc project.
 
-Nguyên tắc ghi changelog:
-
-- Chỉ ghi những gì đã hoàn thành thật sự.
-- Không ghi kế hoạch nếu chưa thực hiện.
-- Mỗi thay đổi nên có ngày, nội dung, người thực hiện và minh chứng.
-- Nếu có AI hỗ trợ, cần ghi rõ AI đã hỗ trợ phần nào.
-- Nếu có commit GitHub, cần ghi link commit.
-- Nếu có lỗi đã sửa, cần ghi rõ lỗi, nguyên nhân và cách xử lý.
-
 ---
 
 ## 2. Thông tin project
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Repository URL |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Môn học | Software Project (SWP391) |
+| Mã môn học | SWP391 |
+| Lớp | SE20A02 |
+| Học kỳ | SU26 |
+| Tên bài tập / Project | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
+| Tên sinh viên / Nhóm | Nhóm 2 (Lê Văn Hậu, Nguyễn Văn Dạng, Hồ Thành Trung, Trần Phú Thịnh, Nguyễn Bùi Quang Vinh) |
+| MSSV / Danh sách MSSV | DE190968, DE190968, DE190928, DE190371, DE190264 |
+| Giảng viên hướng dẫn | (Giảng viên môn SWP391) |
+| Repository URL | https://github.com/fptu-se-su26/swp391-su26-ai-audit-project-swp391_se20a02_group-02 |
+| Ngày bắt đầu | 2026-05-30 |
+| Ngày hoàn thành | 2026-06-16 |
 
 ---
 
@@ -37,351 +28,150 @@ Nguyên tắc ghi changelog:
 
 | Phiên bản/Giai đoạn | Thời gian | Nội dung chính | Trạng thái |
 |---|---|---|---|
-| Phase 01 |  | Khởi tạo project | Not Started / In Progress / Completed |
-| Phase 02 |  | Phân tích yêu cầu | Not Started / In Progress / Completed |
-| Phase 03 |  | Thiết kế hệ thống | Not Started / In Progress / Completed |
-| Phase 04 |  | Implementation | Not Started / In Progress / Completed |
-| Phase 05 |  | Testing & Debug | Not Started / In Progress / Completed |
-| Phase 06 |  | Hoàn thiện báo cáo và demo | Not Started / In Progress / Completed |
+| Phase 01 | 2026-05-30 | Khởi tạo module Chatbot | Completed |
+| Phase 02 | 2026-06-03 | Tích hợp RAG và Gemini | Completed |
+| Phase 03 | 2026-06-07 | Xây dựng chức năng Dark/Light Mode | Completed |
+| Phase 04 | 2026-06-12 | Testing và Tối ưu trải nghiệm | Completed |
 
 ---
 
-# [Phase 01] Khởi tạo project
+# [Phase 01] Khởi tạo module Chatbot
 
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+2026-05-30
 ```
 
 ## Đã hoàn thành
 
-- [ ] Tạo repository
-- [ ] Tạo cấu trúc thư mục project
-- [ ] Tạo file README.md
-- [ ] Tạo thư mục `docs/`
-- [ ] Tạo file `AI_AUDIT_LOG.md`
-- [ ] Tạo file `PROMPTS.md`
-- [ ] Tạo file `REFLECTION.md`
-- [ ] Tạo file `CHANGELOG.md`
-- [ ] Khởi tạo source code ban đầu
-- [ ] Cài đặt thư viện/công cụ cần thiết
-- [ ] Cấu hình môi trường chạy project
+- [x] Tạo service AI module bên trong Spring Boot
+- [x] Cấu hình API Key của Google Gemini
+- [x] Setup các thư viện Spring AI và pgvector
+- [x] Tạo script khởi tạo bảng vector database
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | Thêm dependency Spring AI | Trần Phú Thịnh | `pom.xml` | `commit abc1234` |
+| 2 | Config Gemini API Key | Trần Phú Thịnh | `application.yml` | `commit def5678` |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
-```
-
-## Commit/Screenshot minh chứng
-
-```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
-```
-
-## Ghi chú
-
-```text
-Viết tại đây...
+AI giúp tìm kiếm các dependency cần thiết để cấu hình Spring AI tương thích với Spring Boot 3.
 ```
 
 ---
 
-# [Phase 02] Phân tích yêu cầu
+# [Phase 02] Tích hợp RAG và Gemini
 
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+2026-06-03
 ```
 
 ## Đã hoàn thành
 
-- [ ] Xác định problem statement
-- [ ] Xác định user roles
-- [ ] Viết user stories
-- [ ] Viết use cases
-- [ ] Xác định functional requirements
-- [ ] Xác định non-functional requirements
-- [ ] Xác định business rules
-- [ ] Xác định acceptance criteria
-- [ ] Review yêu cầu với giảng viên/nhóm
-- [ ] Chỉnh sửa yêu cầu sau feedback
+- [x] Xây dựng script crawl dữ liệu policy để làm knowledge base
+- [x] Viết logic chia nhỏ văn bản (TokenTextSplitter)
+- [x] Viết logic lưu embedding vào database
+- [x] Viết `ChatbotService` để gọi retrieval và sinh câu trả lời
+- [x] Triển khai API SSE stream dữ liệu
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | Logic tạo Embeddings | Trần Phú Thịnh | `EmbeddingService.java` | `commit 123abcd` |
+| 2 | RAG Retrieval Logic | Trần Phú Thịnh | `ChatbotService.java` | `commit 456efgh` |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
-```
-
-## Commit/Screenshot minh chứng
-
-```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
-```
-
-## Ghi chú
-
-```text
-Viết tại đây...
+AI sinh code cho luồng Retrieval-Augmented Generation và code stream Server-Sent Events.
 ```
 
 ---
 
-# [Phase 03] Thiết kế hệ thống
+# [Phase 03] Xây dựng chức năng Dark/Light Mode
 
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+2026-06-07
 ```
 
 ## Đã hoàn thành
 
-- [ ] Thiết kế kiến trúc tổng quan
-- [ ] Thiết kế database/ERD
-- [ ] Thiết kế API
-- [ ] Thiết kế giao diện/wireframe
-- [ ] Thiết kế flow xử lý
-- [ ] Thiết kế class diagram
-- [ ] Thiết kế sequence diagram
-- [ ] Thiết kế security/authorization flow
-- [ ] Review thiết kế
-- [ ] Chỉnh sửa thiết kế sau feedback
+- [x] Custom hook xử lý logic đổi màu sáng/tối
+- [x] Cấu hình Tailwind CSS để hỗ trợ class `dark`
+- [x] Tạo UI component `ThemeToggle`
+- [x] Tích hợp vào Header chung của hệ thống
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | Component Toggle Theme | Trần Phú Thịnh | `ThemeToggle.tsx` | `commit 789ijkl` |
+| 2 | Cấu hình Tailwind | Trần Phú Thịnh | `tailwind.config.js` | `commit 999mno` |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
-```
-
-## Commit/Screenshot minh chứng
-
-```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
-```
-
-## Ghi chú
-
-```text
-Viết tại đây...
+AI sinh code script chèn vào head để ngăn chớp màn hình, và hỗ trợ logic quản lý state với Zustand.
 ```
 
 ---
 
-# [Phase 04] Implementation
+# [Phase 04] Testing và Tối ưu trải nghiệm
 
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+2026-06-12
 ```
 
 ## Đã hoàn thành
 
-- [ ] Tạo project structure
-- [ ] Cài đặt database connection
-- [ ] Xây dựng backend
-- [ ] Xây dựng frontend
-- [ ] Xây dựng authentication/authorization
-- [ ] Xử lý CRUD
-- [ ] Xử lý validation
-- [ ] Tích hợp API
-- [ ] Xử lý upload/download file
-- [ ] Xử lý lỗi
-- [ ] Tối ưu giao diện
-- [ ] Cập nhật README hướng dẫn chạy
+- [x] Viết unit test cho logic RAG
+- [x] Viết System Prompt chặn chatbot nói chuyện phiếm
+- [x] Chỉnh chu màu sắc Dark mode ở các trang con
+- [x] Debug lỗi đứt kết nối stream
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Update Prompt template | Trần Phú Thịnh | `ChatbotService.java` | `commit pqr123` |
+| 2 | Fix CSS dark mode card | Trần Phú Thịnh | `VehicleCard.tsx` | `commit stu456` |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
-```
-
-## Commit/Screenshot minh chứng
-
-```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
-```
-
-## Ghi chú
-
-```text
-Viết tại đây...
-```
-
----
-
-# [Phase 05] Testing & Debug
-
-## Ngày thực hiện
-
-```text
-DD/MM/YYYY
-```
-
-## Đã hoàn thành
-
-- [ ] Viết test case
-- [ ] Chạy test chức năng chính
-- [ ] Kiểm tra output
-- [ ] Kiểm tra validation
-- [ ] Kiểm tra lỗi giao diện
-- [ ] Kiểm tra lỗi database
-- [ ] Kiểm tra phân quyền
-- [ ] Kiểm tra bảo mật cơ bản
-- [ ] Fix bug
-- [ ] Chạy lại sau khi fix bug
-- [ ] Ghi nhận kết quả test
-
-## Danh sách lỗi đã xử lý
-
-| STT | Lỗi phát hiện | Nguyên nhân | Cách xử lý | Trạng thái |
-|---:|---|---|---|---|
-| 1 |  |  |  | Open / Fixed / Pending |
-| 2 |  |  |  | Open / Fixed / Pending |
-| 3 |  |  |  | Open / Fixed / Pending |
-| 4 |  |  |  | Open / Fixed / Pending |
-| 5 |  |  |  | Open / Fixed / Pending |
-
-## Thay đổi chi tiết
-
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-
-## AI có hỗ trợ không?
-
-- [ ] Có
-- [ ] Không
-
-Nếu có, mô tả AI đã hỗ trợ phần nào:
-
-```text
-Viết tại đây...
-```
-
-## Commit/Screenshot minh chứng
-
-```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
-```
-
-## Ghi chú
-
-```text
-Viết tại đây...
-```
-
----
-
-# [Phase 06] Hoàn thiện báo cáo và demo
-
-## Ngày thực hiện
-
-```text
-DD/MM/YYYY
-```
-
-## Đã hoàn thành
-
-- [ ] Hoàn thiện source code
-- [ ] Hoàn thiện README.md
-- [ ] Hoàn thiện report
-- [ ] Hoàn thiện slide
-- [ ] Hoàn thiện video demo
-- [ ] Kiểm tra lại `AI_AUDIT_LOG.md`
-- [ ] Kiểm tra lại `PROMPTS.md`
-- [ ] Hoàn thiện `REFLECTION.md`
-- [ ] Kiểm tra lại `CHANGELOG.md`
-- [ ] Đóng gói bài nộp
-
-## Thay đổi chi tiết
-
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-
-## AI có hỗ trợ không?
-
-- [ ] Có
-- [ ] Không
-
-Nếu có, mô tả AI đã hỗ trợ phần nào:
-
-```text
-Viết tại đây...
-```
-
-## Commit/Screenshot minh chứng
-
-```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
-```
-
-## Ghi chú
-
-```text
-Viết tại đây...
+AI cung cấp các câu lệnh để test prompt injection và cách để bảo vệ chatbot bằng kỹ thuật prompt engineering.
 ```
 
 ---
@@ -392,51 +182,15 @@ Viết tại đây...
 
 | STT | Chức năng | Trạng thái | Minh chứng | Ghi chú |
 |---:|---|---|---|---|
-| 1 |  | Completed / Partial / Not Completed |  |  |
-| 2 |  | Completed / Partial / Not Completed |  |  |
-| 3 |  | Completed / Partial / Not Completed |  |  |
-| 4 |  | Completed / Partial / Not Completed |  |  |
-| 5 |  | Completed / Partial / Not Completed |  |  |
+| 1 | AI Chatbot Tư vấn xe | Completed | Demo, Code | Hoạt động trơn tru |
+| 2 | Dark / Light Theme Toggle | Completed | Demo, Code | Lưu cache browser |
 
 ---
 
-## 4.2. Các chức năng chưa hoàn thành
-
-| STT | Chức năng | Lý do chưa hoàn thành | Hướng cải thiện |
-|---:|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-
----
-
-## 4.3. Tổng hợp AI hỗ trợ trong project
-
-| Hạng mục | AI có hỗ trợ không? | Mức độ hỗ trợ | Ghi chú |
-|---|---|---|---|
-| Requirement | Có / Không | Ít / Trung bình / Nhiều |  |
-| Design | Có / Không | Ít / Trung bình / Nhiều |  |
-| Database | Có / Không | Ít / Trung bình / Nhiều |  |
-| Coding | Có / Không | Ít / Trung bình / Nhiều |  |
-| Debug | Có / Không | Ít / Trung bình / Nhiều |  |
-| Testing | Có / Không | Ít / Trung bình / Nhiều |  |
-| Report | Có / Không | Ít / Trung bình / Nhiều |  |
-| Presentation | Có / Không | Ít / Trung bình / Nhiều |  |
-
----
-
-## 4.4. Bài học rút ra
+## 4.2. Bài học rút ra
 
 ```text
-Viết tại đây...
-```
-
----
-
-## 4.5. Hướng cải thiện tiếp theo
-
-```text
-Viết tại đây...
+Nắm được tư duy ứng dụng AI (GenAI) vào dự án phần mềm một cách chuyên nghiệp. Hiểu về các framework Frontend và cách styling.
 ```
 
 ---
@@ -447,4 +201,4 @@ Sinh viên/nhóm cam kết rằng nội dung changelog phản ánh đúng các t
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
 |---|---|
-|  |  |
+| Trần Phú Thịnh - DE190371 | 2026-06-16 |
