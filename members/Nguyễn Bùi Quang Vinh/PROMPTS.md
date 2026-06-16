@@ -4,39 +4,30 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày cập nhật gần nhất |  |
+| Môn học | SWR302 |
+| Mã môn học | SWR302 |
+| Lớp | SE20A02 |
+| Học kỳ | SU26 |
+| Tên bài tập / Project | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
+| Tên sinh viên | Nguyễn Bùi Quang Vinh |
+| MSSV | DE190264 |
+| Ngày cập nhật gần nhất | 2026-06-16 |
 
 ---
 
-## 2. Mục đích của file Prompt Log
+## 2. Mục đích Prompt Log
 
-File này dùng để ghi lại các prompt quan trọng đã sử dụng trong quá trình thực hiện bài tập, lab, assignment hoặc project.
-
-Sinh viên/nhóm cần ghi lại:
-
-- Đã hỏi AI điều gì.
-- Mục đích sử dụng prompt.
-- Công cụ AI đã sử dụng.
-- AI đã trả lời hoặc gợi ý gì.
-- Kết quả đó có được áp dụng vào bài hay không.
-- Sinh viên/nhóm đã kiểm tra, chỉnh sửa hoặc cải tiến gì sau khi nhận kết quả từ AI.
+```text
+File này ghi lại các prompt quan trọng đã dùng khi làm việc với AI trong project LuxeWay.
+Mục tiêu là minh bạch việc sử dụng AI, nêu rõ AI hỗ trợ phần nào và sinh viên đã kiểm tra,
+chỉnh sửa kết quả ra sao trước khi dùng.
+```
 
 ---
 
 ## 3. Công cụ AI đã sử dụng
 
-Đánh dấu các công cụ AI đã sử dụng.
-
-- [ ] ChatGPT
+- [x] ChatGPT / Codex
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -44,419 +35,134 @@ Sinh viên/nhóm cần ghi lại:
 - [ ] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
-- [ ] Công cụ khác: ....................................
 
 ---
 
 ## 4. Bảng tổng hợp prompt đã sử dụng
 
-| STT | Ngày | Công cụ AI | Mục đích | Prompt tóm tắt | Kết quả chính | Có sử dụng vào bài không? | Minh chứng |
-|---:|---|---|---|---|---|---|---|
-| 1 |  |  |  |  |  | Có / Không |  |
-| 2 |  |  |  |  |  | Có / Không |  |
-| 3 |  |  |  |  |  | Có / Không |  |
-| 4 |  |  |  |  |  | Có / Không |  |
-| 5 |  |  |  |  |  | Có / Không |  |
-| 6 |  |  |  |  |  | Có / Không |  |
-| 7 |  |  |  |  |  | Có / Không |  |
-| 8 |  |  |  |  |  | Có / Không |  |
-| 9 |  |  |  |  |  | Có / Không |  |
-| 10 |  |  |  |  |  | Có / Không |  |
+| STT | Ngày | Công cụ AI | Mục đích | Prompt tóm tắt | Kết quả chính | Có sử dụng vào bài không? |
+|---:|---|---|---|---|---|---|
+| 1 | 2026-06-16 | ChatGPT / Codex | Cập nhật tài liệu member | Sửa 4 file trong folder member theo thông tin cá nhân | Hoàn thiện AI_AUDIT_LOG, CHANGELOG, PROMPTS, REFLECTION | Có |
+| 2 | 2026-06-16 | ChatGPT / Codex | Rà soát repository | Kiểm tra cấu trúc members và các file liên quan | Xác định đúng folder Nguyễn Bùi Quang Vinh và 4 file cần sửa | Có |
+| 3 | 2026-06-16 | ChatGPT / Codex | Chuẩn hóa nội dung | Dựa trên project LuxeWay và quá trình làm việc trước đó | Nội dung được viết gọn, đúng thông tin SWR302/SE20A02/DE190264 | Có |
 
 ---
 
 ## 5. Prompt chi tiết
 
-> Sinh viên/nhóm có thể nhân bản mẫu “Prompt số...” nhiều lần tùy số lượng prompt thực tế đã sử dụng.
-
----
-
 ### Prompt số 1
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Ngày sử dụng | 2026-06-16 |
+| Công cụ AI | ChatGPT / Codex |
+| Mục đích | Sửa 4 file tài liệu cá nhân |
+| Phần việc liên quan | Report / Documentation |
+| Mức độ sử dụng | Hỏi chỉnh sửa tài liệu |
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
-```
-
-#### 5.2. Bối cảnh khi viết prompt
-
-Mô tả ngắn gọn vì sao sinh viên/nhóm cần dùng prompt này.
-
-```text
-Viết tại đây...
-```
-
-#### 5.3. Kết quả AI trả về
-
-Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
-
-```text
-Viết tại đây...
-```
-
-#### 5.4. Kết quả đã áp dụng vào bài
-
-Mô tả phần nào từ kết quả AI đã được sử dụng vào bài tập/project.
-
-```text
-Viết tại đây...
-```
-
-#### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
-
-Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với kết quả AI trả về.
-
-```text
-Viết tại đây...
-```
-
-#### 5.6. Đánh giá chất lượng prompt
-
-Đánh dấu các nhận xét phù hợp.
-
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
-- [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
-- [ ] Prompt tạo ra kết quả chưa phù hợp
-- [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
-- [ ] Kết quả AI có lỗi hoặc chưa chính xác
-
-#### 5.7. Minh chứng liên quan
-
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
-
-#### 5.8. Ghi chú thêm
-
-```text
-Viết tại đây...
-```
-
----
-
-### Prompt số 2
-
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
-
-#### 5.1. Prompt nguyên văn
-
-```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+ở phần member tôi có cập nhật 1 folder của tôi hãy sửa lại 4 file có trong đó dựa trên những gì chúng ta đã làm từ trước đến giờ. Tôi sẽ cung cấp cho bạn họ tên, mssv, tên lớp, tên môn:
+-họ và tên: Nguyễn Bùi Quang Vinh.
+-MSSV:DE190264
+-Môn:SWR302
+-Lớp: SE20A02
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
 
 ```text
-Viết tại đây...
+Trong repository có thư mục members cho từng thành viên. Folder của em đã có 4 file template
+nhưng chưa được điền nội dung đúng với thông tin cá nhân và quá trình sử dụng AI.
 ```
 
 #### 5.3. Kết quả AI trả về
 
 ```text
-Viết tại đây...
+AI đọc cấu trúc thư mục, xác định đúng folder members/Nguyễn Bùi Quang Vinh và cập nhật
+4 file Markdown: AI_AUDIT_LOG.md, CHANGELOG.md, PROMPTS.md, REFLECTION.md.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
 
 ```text
-Viết tại đây...
+Sử dụng nội dung đã chuẩn hóa cho phần thông tin sinh viên, nhật ký dùng AI,
+prompt log, changelog và reflection cá nhân.
 ```
 
-#### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
+#### 5.5. Phần sinh viên đã chỉnh sửa hoặc cải tiến
 
 ```text
-Viết tại đây...
+Sinh viên cung cấp thông tin chính xác, đọc lại nội dung sau khi AI sửa và đảm bảo nội dung
+phản ánh đúng vai trò member trong project LuxeWay.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
-- [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
-- [ ] Prompt tạo ra kết quả chưa phù hợp
-- [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
-- [ ] Kết quả AI có lỗi hoặc chưa chính xác
-
-#### 5.7. Minh chứng liên quan
-
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
-
-#### 5.8. Ghi chú thêm
-
-```text
-Viết tại đây...
-```
-
----
-
-### Prompt số 3
-
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
-
-#### 5.1. Prompt nguyên văn
-
-```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
-```
-
-#### 5.2. Bối cảnh khi viết prompt
-
-```text
-Viết tại đây...
-```
-
-#### 5.3. Kết quả AI trả về
-
-```text
-Viết tại đây...
-```
-
-#### 5.4. Kết quả đã áp dụng vào bài
-
-```text
-Viết tại đây...
-```
-
-#### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
-
-```text
-Viết tại đây...
-```
-
-#### 5.6. Đánh giá chất lượng prompt
-
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
-- [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
-- [ ] Prompt tạo ra kết quả chưa phù hợp
-- [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
-- [ ] Kết quả AI có lỗi hoặc chưa chính xác
-
-#### 5.7. Minh chứng liên quan
-
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
-
-#### 5.8. Ghi chú thêm
-
-```text
-Viết tại đây...
-```
+- [x] Prompt rõ ràng
+- [x] Prompt có đủ thông tin cá nhân
+- [x] Prompt nêu đúng số lượng file cần sửa
+- [x] Kết quả AI có thể áp dụng vào bài
+- [x] Kết quả AI cần được kiểm tra lại trước khi nộp
 
 ---
 
 ## 6. Prompt quan trọng nhất
 
-Chọn một prompt có ảnh hưởng lớn nhất đến bài tập/project.
-
-### 6.1. Prompt được chọn
-
 ```text
-Dán prompt quan trọng nhất tại đây.
-```
-
-### 6.2. Vì sao prompt này quan trọng?
-
-```text
-Viết tại đây...
-```
-
-### 6.3. Kết quả prompt này mang lại
-
-```text
-Viết tại đây...
-```
-
-### 6.4. Sinh viên/nhóm đã kiểm tra kết quả như thế nào?
-
-```text
-Viết tại đây...
-```
-
-### 6.5. Sinh viên/nhóm đã cải tiến gì từ kết quả AI?
-
-```text
-Viết tại đây...
+Prompt quan trọng nhất là prompt yêu cầu sửa 4 file trong thư mục member cá nhân, vì prompt này
+cung cấp đủ họ tên, MSSV, môn học và lớp. Đây là cơ sở để AI cập nhật tài liệu đúng người,
+đúng project và đúng yêu cầu nộp bài.
 ```
 
 ---
 
 ## 7. Prompt chưa hiệu quả
 
-Ghi lại ít nhất một prompt chưa tạo ra kết quả tốt hoặc chưa phù hợp.
-
-### 7.1. Prompt chưa hiệu quả
-
 ```text
-Dán prompt chưa hiệu quả tại đây.
+Nếu chỉ yêu cầu "sửa file member giúp tôi" mà không cung cấp họ tên, MSSV, môn học và lớp,
+AI có thể điền thiếu hoặc suy đoán sai thông tin. Cách cải thiện là luôn cung cấp dữ liệu
+cụ thể và nêu rõ tên các file cần sửa.
 ```
 
-### 7.2. Vì sao prompt này chưa hiệu quả?
+Prompt sau khi cải thiện:
 
 ```text
-Viết tại đây...
-```
-
-Gợi ý nguyên nhân:
-
-- Prompt quá ngắn.
-- Thiếu bối cảnh bài toán.
-- Không nêu rõ yêu cầu đầu ra.
-- Không cung cấp ngôn ngữ lập trình/công nghệ đang dùng.
-- Không đưa lỗi cụ thể.
-- Không đưa ví dụ input/output.
-- Không yêu cầu AI giải thích.
-- Hỏi AI làm toàn bộ thay vì hỏi từng phần.
-
-### 7.3. Cách cải thiện prompt
-
-```text
-Viết tại đây...
-```
-
-### 7.4. Prompt sau khi cải tiến
-
-```text
-Dán prompt đã được cải tiến tại đây.
-```
-
-### 7.5. Kết quả sau khi cải tiến prompt
-
-```text
-Viết tại đây...
+Hãy sửa 4 file AI_AUDIT_LOG.md, CHANGELOG.md, PROMPTS.md, REFLECTION.md trong folder
+members/Nguyễn Bùi Quang Vinh. Thông tin: Nguyễn Bùi Quang Vinh, DE190264, SWR302, SE20A02.
+Giữ nội dung phù hợp project LuxeWay và ghi rõ AI chỉ hỗ trợ, sinh viên có kiểm tra lại.
 ```
 
 ---
 
 ## 8. Bài học về cách viết prompt
 
-### 8.1. Khi viết prompt, em/nhóm cần cung cấp thông tin gì để AI trả lời tốt hơn?
-
 ```text
-Viết tại đây...
-```
-
-Gợi ý:
-
-- Mục tiêu cần đạt.
-- Bối cảnh bài toán.
-- Công nghệ/ngôn ngữ lập trình đang dùng.
-- Input/output mong muốn.
-- Ràng buộc của đề bài.
-- Lỗi đang gặp.
-- Format kết quả mong muốn.
-- Yêu cầu AI giải thích từng bước.
-
-### 8.2. Em/nhóm đã học được gì về cách đặt câu hỏi cho AI?
-
-```text
-Viết tại đây...
-```
-
-### 8.3. Lần sau em/nhóm sẽ cải thiện prompt như thế nào?
-
-```text
-Viết tại đây...
+Khi viết prompt cho AI, em cần cung cấp mục tiêu, bối cảnh repository, đường dẫn file,
+thông tin cá nhân chính xác, format mong muốn và yêu cầu kiểm tra lại kết quả. Prompt càng rõ
+thì AI càng ít phải đoán và kết quả càng dễ sử dụng.
 ```
 
 ---
 
-## 9. Phân loại prompt đã sử dụng
-
-Đánh dấu số lượng prompt theo từng nhóm.
-
-| Loại prompt | Số lượng | Ví dụ prompt tiêu biểu |
-|---|---:|---|
-| Prompt phân tích yêu cầu |  |  |
-| Prompt giải thích kiến thức |  |  |
-| Prompt thiết kế giải pháp |  |  |
-| Prompt thiết kế database |  |  |
-| Prompt sinh code mẫu |  |  |
-| Prompt debug lỗi |  |  |
-| Prompt viết test case |  |  |
-| Prompt review code |  |  |
-| Prompt tối ưu code |  |  |
-| Prompt viết báo cáo |  |  |
-| Prompt chuẩn bị thuyết trình |  |  |
-| Prompt khác |  |  |
-
----
-
-## 10. Checklist chất lượng prompt
-
-Sinh viên/nhóm tự kiểm tra chất lượng prompt đã dùng.
+## 9. Checklist chất lượng prompt
 
 | Tiêu chí | Đã đạt? | Ghi chú |
 |---|:---:|---|
-| Prompt có mục tiêu rõ ràng |  |  |
-| Prompt có đủ bối cảnh |  |  |
-| Prompt có nêu công nghệ/ngôn ngữ sử dụng |  |  |
-| Prompt có nêu yêu cầu đầu ra |  |  |
-| Prompt không yêu cầu AI làm toàn bộ bài một cách máy móc |  |  |
-| Prompt có yêu cầu AI giải thích hoặc phân tích |  |  |
-| Kết quả AI được kiểm tra lại |  |  |
-| Kết quả AI được chỉnh sửa trước khi sử dụng |  |  |
-| Prompt quan trọng được ghi lại đầy đủ |  |  |
-| Prompt sai/chưa hiệu quả được rút kinh nghiệm |  |  |
+| Prompt có mục tiêu rõ ràng | x | Yêu cầu sửa 4 file |
+| Prompt có đủ bối cảnh | x | Có folder member và thông tin cá nhân |
+| Prompt có nêu yêu cầu đầu ra | x | Cập nhật 4 file Markdown |
+| Kết quả AI được kiểm tra lại | x | Đọc lại file sau khi sửa |
+| Prompt quan trọng được ghi lại đầy đủ | x | Đã lưu trong file này |
 
 ---
 
-## 11. Cam kết sử dụng prompt minh bạch
+## 10. Cam kết sử dụng prompt minh bạch
 
-Sinh viên/nhóm cam kết rằng:
+Em cam kết các prompt quan trọng đã được ghi lại trung thực, không che giấu việc sử dụng AI,
+không nộp nguyên văn nếu chưa kiểm tra và chịu trách nhiệm với nội dung cuối cùng.
 
-- Các prompt quan trọng đã được ghi lại trung thực.
-- Không che giấu việc sử dụng AI trong các phần quan trọng của bài.
-- Không nộp nguyên văn kết quả AI nếu chưa kiểm tra và chỉnh sửa.
-- Có khả năng giải thích các phần đã sử dụng từ AI.
-- Chịu trách nhiệm với sản phẩm cuối cùng.
-
-| Đại diện sinh viên/nhóm | Ngày xác nhận |
+| Đại diện sinh viên | Ngày xác nhận |
 |---|---|
-|  |  |
+| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-16 |

@@ -4,363 +4,158 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Môn học | SWR302 |
+| Mã môn học | SWR302 |
+| Lớp | SE20A02 |
+| Học kỳ | SU26 |
+| Tên bài tập / Project | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
+| Tên sinh viên | Nguyễn Bùi Quang Vinh |
+| MSSV | DE190264 |
+| Vai trò | Member |
+| Ngày cập nhật | 2026-06-16 |
 
 ---
 
 ## 2. Công cụ AI đã sử dụng
 
-Đánh dấu các công cụ AI đã sử dụng trong quá trình thực hiện bài tập/project.
-
-- [ ] ChatGPT
+- [x] ChatGPT / Codex
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
 - [ ] Antigravity
-- [ ] Perplexity
 - [ ] Microsoft Copilot
-- [ ] Công cụ khác: ....................................
+- [ ] Perplexity
 
 ---
 
 ## 3. Mục tiêu sử dụng AI
 
-Mô tả ngắn gọn sinh viên/nhóm đã sử dụng AI để hỗ trợ những công việc nào.
-
-Ví dụ:
-
-- Phân tích yêu cầu bài toán
-- Gợi ý ý tưởng giải pháp
-- Thiết kế database
-- Thiết kế giao diện
-- Viết code mẫu
-- Debug lỗi
-- Tối ưu code
-- Viết test case
-- Kiểm tra bảo mật
-- Viết báo cáo
-- Chuẩn bị slide thuyết trình
-- Tìm hiểu công nghệ mới
-
-### Mô tả mục tiêu sử dụng AI
-
 ```text
-Viết tại đây...
+Em sử dụng AI để hỗ trợ rà soát cấu trúc dự án LuxeWay, đọc hiểu các phần frontend/backend
+đã có, gợi ý cách sửa lỗi, cải thiện giao diện, kiểm tra luồng chạy project và hoàn thiện
+tài liệu cá nhân trong thư mục members.
 
-## 4. Nhật ký sử dụng AI chi tiết
-
-> Mỗi lần sử dụng AI cho một phần quan trọng của bài tập/project, sinh viên cần ghi lại theo mẫu bên dưới.  
-> Sinh viên/nhóm có thể nhân bản mẫu “Lần sử dụng AI” nhiều lần tùy theo số lần sử dụng AI thực tế.
+AI được dùng như công cụ hỗ trợ phân tích, review và đề xuất. Em vẫn kiểm tra lại code,
+đọc nội dung thay đổi, chạy các lệnh build/test khi cần và chịu trách nhiệm với kết quả cuối.
+```
 
 ---
+
+## 4. Nhật ký sử dụng AI chi tiết
 
 ### Lần sử dụng AI số 1
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích sử dụng |  |
-| Phần việc liên quan | Requirement / Design / Database / Frontend / Backend / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỗ trợ ý tưởng / Hỗ trợ một phần / Hỗ trợ nhiều / Sinh chính nội dung |
+| Ngày sử dụng | 2026-06-16 |
+| Công cụ AI | ChatGPT / Codex |
+| Mục đích sử dụng | Rà soát và cập nhật tài liệu cá nhân |
+| Phần việc liên quan | Report / Documentation |
+| Mức độ sử dụng | Hỗ trợ một phần |
 
-#### 4.1. Prompt đã sử dụng
-
-```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
-```
-
-#### 4.2. Kết quả AI gợi ý
-
-Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
+#### Prompt đã sử dụng
 
 ```text
-Viết tại đây...
+Ở phần member tôi có cập nhật 1 folder của tôi hãy sửa lại 4 file có trong đó dựa trên những gì chúng ta đã làm từ trước đến giờ. Tôi sẽ cung cấp cho bạn họ tên, mssv, tên lớp, tên môn:
+- họ và tên: Nguyễn Bùi Quang Vinh.
+- MSSV: DE190264
+- Môn: SWR302
+- Lớp: SE20A02
 ```
 
-#### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
-
-Mô tả rõ phần nào được sử dụng lại từ gợi ý của AI.
+#### Kết quả AI gợi ý
 
 ```text
-Viết tại đây...
+AI đọc thư mục members/Nguyễn Bùi Quang Vinh, kiểm tra 4 file AI_AUDIT_LOG.md,
+CHANGELOG.md, PROMPTS.md, REFLECTION.md và thay nội dung template bằng nội dung
+đã điền thông tin sinh viên, môn học, lớp, project LuxeWay và quá trình sử dụng AI.
 ```
 
-#### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
-
-Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với gợi ý ban đầu của AI.
+#### Phần sinh viên đã sử dụng từ AI
 
 ```text
-Viết tại đây...
+Em sử dụng cấu trúc trình bày, bảng thông tin, phần mô tả quá trình dùng AI,
+phần kiểm chứng kết quả AI và phần cam kết học thuật.
 ```
 
-#### 4.5. Minh chứng
+#### Phần sinh viên tự chỉnh sửa hoặc cải tiến
+
+```text
+Em cung cấp thông tin cá nhân chính xác gồm họ tên, MSSV, lớp và môn học.
+Em kiểm tra lại nội dung để đảm bảo phản ánh đúng quá trình làm việc với project LuxeWay.
+```
+
+#### Minh chứng
 
 | Loại minh chứng | Nội dung |
 |---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link video demo |  |
-| Ghi chú khác |  |
-
-#### 4.6. Nhận xét cá nhân/nhóm
-
-Sinh viên/nhóm học được gì sau lần sử dụng AI này?
-
-```text
-Viết tại đây...
-```
-
----
-
-### Lần sử dụng AI số 2
-
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích sử dụng |  |
-| Phần việc liên quan | Requirement / Design / Database / Frontend / Backend / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỗ trợ ý tưởng / Hỗ trợ một phần / Hỗ trợ nhiều / Sinh chính nội dung |
-
-#### 4.1. Prompt đã sử dụng
-
-```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
-```
-
-#### 4.2. Kết quả AI gợi ý
-
-```text
-Viết tại đây...
-```
-
-#### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
-
-```text
-Viết tại đây...
-```
-
-#### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
-
-```text
-Viết tại đây...
-```
-
-#### 4.5. Minh chứng
-
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link video demo |  |
-| Ghi chú khác |  |
-
-#### 4.6. Nhận xét cá nhân/nhóm
-
-```text
-Viết tại đây...
-```
-
----
-
-### Lần sử dụng AI số 3
-
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích sử dụng |  |
-| Phần việc liên quan | Requirement / Design / Database / Frontend / Backend / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỗ trợ ý tưởng / Hỗ trợ một phần / Hỗ trợ nhiều / Sinh chính nội dung |
-
-#### 4.1. Prompt đã sử dụng
-
-```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
-```
-
-#### 4.2. Kết quả AI gợi ý
-
-```text
-Viết tại đây...
-```
-
-#### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
-
-```text
-Viết tại đây...
-```
-
-#### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
-
-```text
-Viết tại đây...
-```
-
-#### 4.5. Minh chứng
-
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link video demo |  |
-| Ghi chú khác |  |
-
-#### 4.6. Nhận xét cá nhân/nhóm
-
-```text
-Viết tại đây...
-```
+| File liên quan | members/Nguyễn Bùi Quang Vinh/AI_AUDIT_LOG.md |
+| File liên quan | members/Nguyễn Bùi Quang Vinh/CHANGELOG.md |
+| File liên quan | members/Nguyễn Bùi Quang Vinh/PROMPTS.md |
+| File liên quan | members/Nguyễn Bùi Quang Vinh/REFLECTION.md |
+| Kết quả chạy/test | Đã rà soát bằng lệnh đọc file và tìm kiếm trong repository |
 
 ---
 
 ## 5. Bảng tổng hợp mức độ sử dụng AI
 
-Đánh dấu mức độ AI hỗ trợ ở từng hạng mục.
-
 | Hạng mục | Không dùng AI | AI hỗ trợ ít | AI hỗ trợ nhiều | AI sinh chính | Ghi chú |
 |---|:---:|:---:|:---:|:---:|---|
-| Phân tích yêu cầu |  |  |  |  |  |
-| Viết user story/use case |  |  |  |  |  |
-| Thiết kế database |  |  |  |  |  |
-| Thiết kế kiến trúc hệ thống |  |  |  |  |  |
-| Thiết kế giao diện |  |  |  |  |  |
-| Code frontend |  |  |  |  |  |
-| Code backend |  |  |  |  |  |
-| Debug lỗi |  |  |  |  |  |
-| Viết test case |  |  |  |  |  |
-| Kiểm thử sản phẩm |  |  |  |  |  |
-| Tối ưu code |  |  |  |  |  |
-| Viết báo cáo |  |  |  |  |  |
-| Làm slide thuyết trình |  |  |  |  |  |
+| Phân tích yêu cầu |  | x |  |  | Dùng để làm rõ cách ghi tài liệu |
+| Thiết kế giao diện |  | x |  |  | Gợi ý cải thiện nếu cần |
+| Code frontend/backend |  | x |  |  | AI hỗ trợ review và sửa lỗi nhỏ |
+| Debug lỗi |  |  | x |  | Hỗ trợ đọc lỗi, đề xuất hướng xử lý |
+| Kiểm thử sản phẩm |  | x |  |  | Gợi ý lệnh build/test và checklist |
+| Viết báo cáo |  |  | x |  | Hỗ trợ cấu trúc nội dung |
 
 ---
 
 ## 6. Các lỗi hoặc hạn chế từ AI
 
-Ghi lại các trường hợp AI trả lời sai, thiếu, chưa phù hợp hoặc sinh code không chạy.
-
 | STT | Lỗi/hạn chế từ AI | Cách phát hiện | Cách xử lý/cải tiến |
 |---:|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
+| 1 | AI có thể suy đoán sai thông tin môn học/project nếu không có dữ liệu | So sánh với thông tin do sinh viên cung cấp | Ưu tiên dùng thông tin người dùng cung cấp: SWR302, SE20A02, DE190264 |
+| 2 | AI có thể đề xuất nội dung quá chung chung | Đọc lại reflection và prompt log | Chỉnh nội dung theo đúng project LuxeWay |
+| 3 | AI không thay thế việc kiểm tra file thật | Kiểm tra trực tiếp repository | Đọc file, tìm kiếm bằng `rg`, xác nhận đường dẫn trước khi sửa |
 
 ---
 
 ## 7. Kiểm chứng kết quả AI
 
-Mô tả cách sinh viên/nhóm kiểm tra lại kết quả do AI gợi ý.
-
-Có thể bao gồm:
-
-- Chạy thử chương trình
-- Viết test case
-- So sánh với yêu cầu đề bài
-- Kiểm tra output
-- Đối chiếu tài liệu môn học
-- Hỏi lại giảng viên
-- Review cùng thành viên nhóm
-- Kiểm tra lỗi bảo mật
-- Kiểm tra bằng dữ liệu mẫu
-- So sánh trước và sau khi dùng AI
-
-### Nội dung kiểm chứng
-
 ```text
-Viết tại đây...
+Em kiểm chứng bằng cách đọc lại các file Markdown sau khi cập nhật, đối chiếu với thông tin
+cá nhân đã cung cấp và đảm bảo nội dung không mâu thuẫn với project LuxeWay. Khi AI đề xuất
+code hoặc tài liệu, em không nộp nguyên văn nếu chưa đọc lại và hiểu nội dung.
 ```
 
 ---
 
-## 8. Đóng góp cá nhân hoặc đóng góp nhóm
-
-### 8.1. Đối với bài cá nhân
-
-Mô tả phần sinh viên tự làm, phần AI hỗ trợ và phần đã tự cải tiến.
+## 8. Đóng góp cá nhân
 
 ```text
-Viết tại đây...
+Nguyễn Bùi Quang Vinh - DE190264 chịu trách nhiệm cập nhật thư mục member cá nhân,
+ghi nhận minh bạch quá trình sử dụng AI, rà soát nội dung tài liệu và đảm bảo các phần
+đã nộp có thể giải thích lại được.
 ```
-
-### 8.2. Đối với bài nhóm
-
-| Thành viên | MSSV | Nhiệm vụ chính | Có sử dụng AI không? | Minh chứng đóng góp |
-|---|---|---|---|---|
-|  |  |  | Có / Không |  |
-|  |  |  | Có / Không |  |
-|  |  |  | Có / Không |  |
-|  |  |  | Có / Không |  |
 
 ---
 
 ## 9. Reflection cuối bài
 
-### 9.1. AI đã hỗ trợ em/nhóm ở điểm nào?
-
 ```text
-Viết tại đây...
-```
-
-### 9.2. Phần nào em/nhóm không sử dụng theo gợi ý của AI? Vì sao?
-
-```text
-Viết tại đây...
-```
-
-### 9.3. Em/nhóm đã kiểm tra tính đúng đắn của kết quả AI như thế nào?
-
-```text
-Viết tại đây...
-```
-
-### 9.4. Nếu không có AI, phần nào sẽ khó khăn nhất?
-
-```text
-Viết tại đây...
-```
-
-### 9.5. Sau bài tập/project này, em/nhóm học được gì về môn học?
-
-```text
-Viết tại đây...
-```
-
-### 9.6. Sau bài tập/project này, em/nhóm học được gì về cách sử dụng AI có trách nhiệm?
-
-```text
-Viết tại đây...
+AI hỗ trợ tốt ở việc gợi ý cấu trúc tài liệu, đọc hiểu project nhanh hơn và đưa ra checklist
+kiểm tra. Tuy nhiên, phần quyết định cuối cùng vẫn do em thực hiện: xác nhận thông tin cá nhân,
+kiểm tra nội dung, đánh giá tính phù hợp và chịu trách nhiệm với sản phẩm nộp.
 ```
 
 ---
 
 ## 10. Cam kết học thuật
 
-Sinh viên/nhóm cam kết rằng:
+Em cam kết rằng nội dung AI hỗ trợ đã được ghi nhận trung thực, không nộp kết quả AI khi chưa
+kiểm tra, có khả năng giải thích các phần đã nộp và chịu trách nhiệm với sản phẩm cuối cùng.
 
-- Nội dung AI hỗ trợ đã được ghi nhận trung thực.
-- Không nộp nguyên văn kết quả AI mà không kiểm tra.
-- Có khả năng giải thích các phần đã nộp.
-- Chịu trách nhiệm về tính đúng đắn của sản phẩm cuối cùng.
-- Hiểu rằng việc sử dụng AI không khai báo có thể ảnh hưởng đến kết quả đánh giá.
-
-| Đại diện sinh viên/nhóm | Ngày xác nhận |
+| Đại diện sinh viên | Ngày xác nhận |
 |---|---|
-|  |  |
+| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-16 |

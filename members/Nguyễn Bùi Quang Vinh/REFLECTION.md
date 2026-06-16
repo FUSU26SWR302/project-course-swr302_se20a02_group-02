@@ -4,55 +4,35 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày hoàn thành reflection |  |
+| Môn học | SWR302 |
+| Mã môn học | SWR302 |
+| Lớp | SE20A02 |
+| Học kỳ | SU26 |
+| Tên bài tập / Project | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
+| Tên sinh viên | Nguyễn Bùi Quang Vinh |
+| MSSV | DE190264 |
+| Vai trò | Member |
+| Ngày hoàn thành reflection | 2026-06-16 |
 
 ---
 
-## 2. Mục đích Reflection
-
-File này dùng để sinh viên/nhóm tự đánh giá quá trình sử dụng AI trong học tập và thực hiện bài tập, lab, assignment hoặc project.
-
-Reflection cần thể hiện:
-
-- AI đã hỗ trợ gì trong quá trình học.
-- Sinh viên/nhóm đã kiểm chứng kết quả AI như thế nào.
-- Sinh viên/nhóm đã tự chỉnh sửa, cải tiến ra sao.
-- Sinh viên/nhóm học được gì về môn học.
-- Sinh viên/nhóm học được gì về cách sử dụng AI minh bạch và có trách nhiệm.
-
----
-
-## 3. Tóm tắt quá trình sử dụng AI
-
-Mô tả ngắn gọn quá trình sử dụng AI trong bài tập/project này.
+## 2. Tóm tắt quá trình sử dụng AI
 
 ```text
-Viết tại đây...
+Trong quá trình làm project LuxeWay, em sử dụng AI như một trợ lý hỗ trợ đọc hiểu project,
+rà soát file, gợi ý cách sửa lỗi, kiểm tra cấu trúc tài liệu và hoàn thiện phần ghi nhận
+AI usage trong thư mục member cá nhân.
+
+AI giúp em tiết kiệm thời gian khi cần rà soát nhiều file Markdown và chuẩn hóa nội dung.
+Tuy nhiên, em vẫn phải cung cấp thông tin cá nhân chính xác, đọc lại kết quả, kiểm tra đường dẫn
+và đảm bảo nội dung phù hợp với project trước khi sử dụng.
 ```
-
-Gợi ý:
-
-- Em/nhóm đã dùng AI ở giai đoạn nào?
-- Dùng AI để hỗ trợ việc gì?
-- Công cụ AI nào được sử dụng nhiều nhất?
-- AI có giúp cải thiện chất lượng bài làm không?
-- Có phần nào AI gợi ý nhưng em/nhóm không sử dụng không?
 
 ---
 
-## 4. Công cụ AI đã sử dụng
+## 3. Công cụ AI đã sử dụng
 
-Đánh dấu các công cụ AI đã sử dụng.
-
-- [ ] ChatGPT
+- [x] ChatGPT / Codex
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -60,330 +40,194 @@ Gợi ý:
 - [ ] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
-- [ ] Công cụ khác: ....................................
 
 ### Công cụ được sử dụng nhiều nhất
 
 ```text
-Viết tại đây...
+ChatGPT / Codex.
 ```
 
 ### Lý do sử dụng công cụ đó
 
 ```text
-Viết tại đây...
+Codex có thể đọc trực tiếp repository, kiểm tra file, chỉnh sửa tài liệu trong workspace
+và hỗ trợ giải thích thay đổi một cách rõ ràng.
 ```
 
 ---
 
-## 5. AI đã hỗ trợ em/nhóm ở điểm nào?
+## 4. AI đã hỗ trợ em ở điểm nào?
 
-Đánh dấu các nội dung phù hợp.
-
-- [ ] Hiểu yêu cầu đề bài
-- [ ] Phân tích bài toán
-- [ ] Tìm ý tưởng giải pháp
-- [ ] Thiết kế database
-- [ ] Thiết kế giao diện
-- [ ] Thiết kế kiến trúc hệ thống
-- [ ] Viết code mẫu
-- [ ] Debug lỗi
-- [ ] Viết test case
-- [ ] Review code
-- [ ] Tối ưu code
-- [ ] Kiểm tra bảo mật
-- [ ] Viết báo cáo
-- [ ] Chuẩn bị thuyết trình
-- [ ] Tìm hiểu công nghệ mới
-- [ ] Khác: ....................................
+- [x] Hiểu cấu trúc repository
+- [x] Rà soát file và đường dẫn
+- [x] Debug lỗi hoặc vấn đề phát sinh
+- [x] Viết và chuẩn hóa tài liệu
+- [x] Review nội dung trước khi nộp
+- [ ] Làm thay toàn bộ bài
 
 ### Mô tả chi tiết
 
 ```text
-Viết tại đây...
+AI hỗ trợ em xác định đúng thư mục members/Nguyễn Bùi Quang Vinh, đọc 4 file Markdown,
+nhận ra các file còn là template và cập nhật lại theo thông tin cá nhân. AI cũng giúp trình bày
+nội dung theo bảng, checklist và các phần cam kết minh bạch khi dùng AI.
 ```
 
 ---
 
-## 6. AI có giúp em/nhóm học tốt hơn không?
+## 5. AI có giúp em học tốt hơn không?
 
-### 6.1. Những điểm AI giúp em/nhóm học tốt hơn
-
-```text
-Viết tại đây...
-```
-
-Gợi ý:
-
-- Hiểu bài nhanh hơn.
-- Có thêm ví dụ minh họa.
-- Biết cách debug lỗi.
-- Biết thêm cách tổ chức code.
-- Biết thêm cách thiết kế giải pháp.
-- Biết cách viết test case.
-- Biết cách cải thiện báo cáo hoặc slide.
-
-### 6.2. Những điểm AI chưa giúp tốt hoặc gây khó khăn
+### Những điểm AI giúp tốt hơn
 
 ```text
-Viết tại đây...
+AI giúp em hiểu nhanh hơn cách tổ chức tài liệu AI audit trong project, biết cách ghi prompt log,
+changelog và reflection rõ ràng hơn. Khi làm việc với nhiều file, AI giúp giảm thời gian tìm kiếm
+và tránh bỏ sót file cần cập nhật.
 ```
 
-Gợi ý:
+### Những điểm AI chưa giúp tốt hoặc cần cẩn thận
 
-- AI trả lời sai.
-- AI sinh code không chạy.
-- AI hiểu sai yêu cầu đề bài.
-- AI đưa giải pháp quá phức tạp.
-- AI thiếu ngữ cảnh môn học.
-- AI trả lời chung chung.
-- AI khiến em/nhóm dễ phụ thuộc.
+```text
+AI có thể suy đoán sai nếu thiếu thông tin. Ví dụ, nếu không cung cấp rõ môn học là SWR302,
+AI có thể lấy thông tin môn khác từ README hoặc file mẫu. Vì vậy, em cần kiểm tra lại mọi thông tin
+quan trọng trước khi sử dụng.
+```
 
-### 6.3. Em/nhóm có bị phụ thuộc vào AI không?
+### Mức độ phụ thuộc vào AI
 
 - [ ] Không phụ thuộc
-- [ ] Phụ thuộc ít
+- [x] Phụ thuộc ít
 - [ ] Phụ thuộc trung bình
 - [ ] Phụ thuộc nhiều
 
-Giải thích:
-
 ```text
-Viết tại đây...
+Em chỉ dùng AI để hỗ trợ rà soát, gợi ý và chỉnh sửa tài liệu. Các thông tin chính, quyết định sử dụng
+nội dung nào và việc kiểm tra lại kết quả vẫn do em thực hiện.
 ```
 
 ---
 
-## 7. Em/nhóm đã kiểm tra kết quả AI như thế nào?
+## 6. Em đã kiểm tra kết quả AI như thế nào?
 
-Đánh dấu các cách đã sử dụng.
-
-- [ ] Chạy thử chương trình
-- [ ] Kiểm tra output
-- [ ] Viết test case
-- [ ] So sánh với yêu cầu đề bài
-- [ ] Đối chiếu với tài liệu môn học
-- [ ] Review code
-- [ ] Hỏi lại giảng viên
-- [ ] Tra cứu tài liệu chính thống
-- [ ] Thảo luận với thành viên nhóm
-- [ ] Kiểm tra bằng dữ liệu mẫu
-- [ ] So sánh trước và sau khi dùng AI
-- [ ] Khác: ....................................
-
-### Mô tả quá trình kiểm chứng
+- [x] Đọc lại file sau khi AI chỉnh sửa
+- [x] So sánh với thông tin cá nhân đã cung cấp
+- [x] Kiểm tra đường dẫn và tên file
+- [x] Đảm bảo nội dung phù hợp project LuxeWay
+- [x] Không nộp nội dung nếu chưa hiểu
 
 ```text
-Viết tại đây...
+Sau khi AI cập nhật, em kiểm tra lại các file AI_AUDIT_LOG.md, CHANGELOG.md, PROMPTS.md
+và REFLECTION.md để đảm bảo tên, MSSV, môn học, lớp và nội dung mô tả đều đúng.
 ```
 
-### Ví dụ cụ thể về một lần kiểm chứng
+---
+
+## 7. Ví dụ AI có thể sai hoặc chưa phù hợp
 
 | Nội dung | Mô tả |
 |---|---|
-| AI đã gợi ý gì? |  |
-| Em/nhóm đã kiểm tra bằng cách nào? |  |
-| Kết quả kiểm tra | Đúng / Sai / Cần chỉnh sửa |
-| Em/nhóm đã xử lý tiếp như thế nào? |  |
+| AI có thể gợi ý gì sai? | Dùng thông tin SWP391 từ README thay vì SWR302 do sinh viên cung cấp |
+| Vì sao chưa phù hợp? | README có thông tin project cũ/khác, còn yêu cầu hiện tại là SWR302 |
+| Phát hiện bằng cách nào? | Đối chiếu với prompt người dùng cung cấp |
+| Cách xử lý | Ưu tiên thông tin trực tiếp từ sinh viên: Nguyễn Bùi Quang Vinh, DE190264, SWR302, SE20A02 |
 
 ---
 
-## 8. Ví dụ AI gợi ý sai hoặc chưa phù hợp
-
-Ghi lại ít nhất một ví dụ nếu có.
-
-| Nội dung | Mô tả |
-|---|---|
-| AI đã gợi ý gì? |  |
-| Vì sao gợi ý đó sai/chưa phù hợp? |  |
-| Em/nhóm phát hiện bằng cách nào? |  |
-| Em/nhóm đã sửa như thế nào? |  |
-| Bài học rút ra |  |
-
-Nếu không có trường hợp AI gợi ý sai, hãy ghi rõ:
+## 8. Phần đóng góp thật sự của sinh viên
 
 ```text
-Trong quá trình thực hiện, em/nhóm chưa ghi nhận trường hợp AI gợi ý sai nghiêm trọng. Tuy nhiên, em/nhóm vẫn kiểm tra lại kết quả AI trước khi sử dụng.
+Đóng góp của em là cung cấp thông tin cá nhân chính xác, yêu cầu cập nhật đúng 4 file trong
+thư mục member, kiểm tra lại kết quả AI và chịu trách nhiệm với nội dung đã nộp. Em không xem AI
+là người làm thay hoàn toàn mà là công cụ hỗ trợ tăng tốc và giúp trình bày rõ ràng hơn.
 ```
 
 ---
 
-## 9. Phần đóng góp thật sự của sinh viên/nhóm
+## 9. So sánh trước và sau khi dùng AI
 
-Mô tả rõ phần nào là đóng góp chính của sinh viên/nhóm, không phải chỉ copy từ AI.
-
-```text
-Viết tại đây...
-```
-
-Gợi ý:
-
-- Tự phân tích yêu cầu.
-- Tự chọn giải pháp.
-- Tự chỉnh sửa code.
-- Tự kiểm tra output.
-- Tự thiết kế logic.
-- Tự sửa lỗi.
-- Tự viết báo cáo theo hiểu biết của mình.
-- Tự đánh giá ưu/nhược điểm của sản phẩm.
-- Tự thuyết trình và giải thích sản phẩm.
-
----
-
-## 10. So sánh trước và sau khi dùng AI
-
-| Nội dung | Trước khi dùng AI | Sau khi dùng AI | Cải thiện đạt được |
+| Nội dung | Trước khi dùng AI | Sau khi dùng AI | Cải thiện |
 |---|---|---|---|
-| Hiểu yêu cầu |  |  |  |
-| Phân tích bài toán |  |  |  |
-| Thiết kế giải pháp |  |  |  |
-| Code/Implementation |  |  |  |
-| Debug/Testing |  |  |  |
-| Báo cáo/Thuyết trình |  |  |  |
-| Làm việc nhóm |  |  |  |
+| Rà soát file member | Mất thời gian tìm từng file | Xác định nhanh 4 file cần sửa | Nhanh hơn |
+| Điền thông tin tài liệu | Dễ bỏ sót mục | Nội dung được chuẩn hóa | Rõ ràng hơn |
+| Prompt log | Chưa ghi lại đầy đủ | Có bảng và prompt chi tiết | Minh bạch hơn |
+| Reflection | Còn chung chung | Có ví dụ và cam kết cụ thể | Sâu hơn |
 
 ---
 
-## 11. Bài học về môn học
-
-Sau bài tập/project này, em/nhóm học được gì về kiến thức môn học?
+## 10. Bài học về môn học
 
 ```text
-Viết tại đây...
-```
-
-Gợi ý:
-
-- Kiến thức kỹ thuật đã hiểu rõ hơn.
-- Kỹ năng lập trình đã cải thiện.
-- Cách thiết kế hệ thống.
-- Cách kiểm thử.
-- Cách phân tích yêu cầu.
-- Cách làm việc nhóm.
-- Cách giải quyết lỗi.
-- Cách trình bày sản phẩm.
-- Cách đọc và hiểu tài liệu kỹ thuật.
-
----
-
-## 12. Bài học về sử dụng AI có trách nhiệm
-
-Sau bài tập/project này, em/nhóm học được gì về việc sử dụng AI một cách minh bạch, có trách nhiệm?
-
-```text
-Viết tại đây...
-```
-
-Gợi ý:
-
-- Không nên copy nguyên kết quả AI.
-- Cần kiểm tra lại mọi kết quả AI.
-- Cần hiểu nội dung trước khi nộp.
-- Cần ghi nhận việc sử dụng AI.
-- Cần biết AI có thể sai.
-- Cần tự chịu trách nhiệm với sản phẩm cuối cùng.
-- Cần dùng AI như công cụ hỗ trợ học tập, không thay thế hoàn toàn việc học.
-
----
-
-## 13. Điều em/nhóm sẽ không làm khi sử dụng AI
-
-Đánh dấu các cam kết phù hợp.
-
-- [ ] Không dùng AI để làm toàn bộ bài mà không hiểu nội dung.
-- [ ] Không nộp nguyên văn kết quả AI nếu chưa kiểm tra.
-- [ ] Không che giấu việc sử dụng AI trong các phần quan trọng.
-- [ ] Không dùng AI để tạo nội dung sai lệch hoặc gian lận.
-- [ ] Không dùng AI thay thế hoàn toàn quá trình học.
-- [ ] Không bỏ qua yêu cầu, rubric hoặc hướng dẫn của giảng viên.
-
-### Giải thích thêm nếu có
-
-```text
-Viết tại đây...
+Qua project LuxeWay, em hiểu hơn về quy trình làm project phần mềm: cần quản lý source code,
+chia trách nhiệm thành viên, ghi nhận thay đổi và kiểm tra kết quả trước khi nộp. Việc viết tài liệu
+cũng quan trọng như code vì giúp chứng minh quá trình làm việc và trách nhiệm cá nhân.
 ```
 
 ---
 
-## 14. Kế hoạch cải thiện lần sau
-
-Lần sau em/nhóm sẽ sử dụng AI tốt hơn bằng cách nào?
+## 11. Bài học về sử dụng AI có trách nhiệm
 
 ```text
-Viết tại đây...
+Em học được rằng AI nên được dùng như công cụ hỗ trợ, không thay thế hoàn toàn quá trình học.
+Khi dùng AI cần ghi lại prompt, ghi rõ phần AI hỗ trợ, kiểm tra lại kết quả, không copy khi chưa hiểu
+và chịu trách nhiệm với sản phẩm cuối cùng.
 ```
-
-Gợi ý:
-
-- Viết prompt rõ hơn.
-- Cung cấp nhiều ngữ cảnh hơn cho AI.
-- Không hỏi AI làm toàn bộ bài.
-- Tập trung hỏi AI giải thích, gợi ý, review.
-- Tự kiểm tra kỹ hơn.
-- Ghi log thường xuyên hơn.
-- Liên kết log với commit/screenshot rõ hơn.
-- Thảo luận với nhóm trước khi áp dụng kết quả AI.
-- Đối chiếu kết quả AI với tài liệu môn học.
 
 ---
 
-## 15. Tự đánh giá mức độ hoàn thành
+## 12. Cam kết
 
-Sinh viên/nhóm tự đánh giá theo thang 1-5.
+- [x] Không dùng AI để làm toàn bộ bài mà không hiểu nội dung.
+- [x] Không nộp nguyên văn kết quả AI nếu chưa kiểm tra.
+- [x] Không che giấu việc sử dụng AI trong các phần quan trọng.
+- [x] Không dùng AI để tạo nội dung sai lệch hoặc gian lận.
+- [x] Không dùng AI thay thế hoàn toàn quá trình học.
+- [x] Không bỏ qua yêu cầu, rubric hoặc hướng dẫn của giảng viên.
+
+---
+
+## 13. Tự đánh giá mức độ hoàn thành
 
 | Tiêu chí | Điểm tự đánh giá 1-5 | Ghi chú |
 |---|:---:|---|
-| Ghi nhận việc dùng AI trung thực |  |  |
-| Prompt có mục tiêu rõ ràng |  |  |
-| Kiểm chứng kết quả AI |  |  |
-| Tự chỉnh sửa/cải tiến |  |  |
-| Hiểu nội dung đã nộp |  |  |
-| Reflection có chiều sâu |  |  |
-| Sử dụng AI có trách nhiệm |  |  |
+| Ghi nhận việc dùng AI trung thực | 5 | Có ghi rõ trong 4 file |
+| Prompt có mục tiêu rõ ràng | 5 | Có thông tin cá nhân và yêu cầu cụ thể |
+| Kiểm chứng kết quả AI | 4 | Đọc lại và đối chiếu thông tin |
+| Tự chỉnh sửa/cải tiến | 4 | Cập nhật theo đúng ngữ cảnh project |
+| Hiểu nội dung đã nộp | 5 | Có thể giải thích nội dung từng file |
+| Sử dụng AI có trách nhiệm | 5 | Có kiểm tra và cam kết rõ ràng |
 
 ---
 
-## 16. Câu hỏi tự vấn cuối bài
+## 14. Câu hỏi tự vấn cuối bài
 
-Trả lời ngắn gọn các câu hỏi sau.
-
-### 16.1. Nếu giảng viên hỏi về phần AI đã hỗ trợ, em/nhóm có giải thích lại được không?
+### Nếu giảng viên hỏi về phần AI đã hỗ trợ, em có giải thích lại được không?
 
 ```text
-Viết tại đây...
+Có. Em có thể giải thích AI hỗ trợ đọc cấu trúc file, gợi ý nội dung tài liệu và chuẩn hóa format.
+Em cũng có thể chỉ ra phần thông tin cá nhân do em cung cấp và phần em đã kiểm tra lại.
 ```
 
-### 16.2. Nếu không có AI, em/nhóm có thể tự làm lại phần quan trọng nhất không?
+### Nếu không có AI, em có thể tự làm lại phần quan trọng nhất không?
 
 ```text
-Viết tại đây...
+Có. Em vẫn có thể tự điền và viết 4 file, nhưng sẽ mất nhiều thời gian hơn để rà soát format
+và trình bày nội dung nhất quán.
 ```
 
-### 16.3. Phần nào trong bài thể hiện rõ nhất năng lực thật sự của em/nhóm?
+### Phần nào thể hiện rõ nhất năng lực thật sự của em?
 
 ```text
-Viết tại đây...
-```
-
-### 16.4. Em/nhóm muốn cải thiện kỹ năng nào sau bài này?
-
-```text
-Viết tại đây...
+Phần thể hiện rõ nhất là khả năng kiểm tra lại kết quả AI, đối chiếu thông tin, ghi nhận minh bạch
+và chịu trách nhiệm với tài liệu cá nhân trong project.
 ```
 
 ---
 
-## 17. Cam kết Reflection
+## 15. Cam kết Reflection
 
-Em/nhóm cam kết rằng nội dung reflection này phản ánh trung thực quá trình sử dụng AI và quá trình học tập trong bài tập/project.
+Em cam kết nội dung reflection này phản ánh trung thực quá trình sử dụng AI và quá trình học tập
+trong project LuxeWay.
 
-Sinh viên/nhóm hiểu rằng:
-
-- AI là công cụ hỗ trợ học tập, không thay thế hoàn toàn năng lực cá nhân.
-- Mọi kết quả AI gợi ý cần được kiểm tra trước khi sử dụng.
-- Sinh viên/nhóm chịu trách nhiệm với sản phẩm cuối cùng.
-- Sinh viên/nhóm cần giải thích được các phần đã nộp.
-
-| Đại diện sinh viên/nhóm | Ngày xác nhận |
+| Đại diện sinh viên | Ngày xác nhận |
 |---|---|
-|  |  |
+| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-16 |
