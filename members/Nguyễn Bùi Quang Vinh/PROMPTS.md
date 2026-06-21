@@ -11,16 +11,16 @@
 | Tên bài tập / Project | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
 | Tên sinh viên | Nguyễn Bùi Quang Vinh |
 | MSSV | DE190264 |
-| Ngày cập nhật gần nhất | 2026-06-16 |
+| Ngày cập nhật gần nhất | 2026-06-22 |
 
 ---
 
 ## 2. Mục đích Prompt Log
 
 ```text
-File này ghi lại các prompt quan trọng đã dùng khi làm việc với AI trong project LuxeWay.
-Mục tiêu là minh bạch việc sử dụng AI, nêu rõ AI hỗ trợ phần nào và sinh viên đã kiểm tra,
-chỉnh sửa kết quả ra sao trước khi dùng.
+File này ghi lại các yêu cầu quan trọng đã dùng khi phát triển và sửa lỗi website LuxeWay với AI.
+Nội dung tập trung vào phân tích code, tích hợp frontend/backend, sửa luồng xác thực, marketplace,
+booking và dashboard.
 ```
 
 ---
@@ -32,137 +32,175 @@ chỉnh sửa kết quả ra sao trước khi dùng.
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
 - [ ] Microsoft Copilot
-- [ ] Perplexity
 
 ---
 
-## 4. Bảng tổng hợp prompt đã sử dụng
+## 4. Bảng tổng hợp prompt phát triển và sửa lỗi
 
-| STT | Ngày | Công cụ AI | Mục đích | Prompt tóm tắt | Kết quả chính | Có sử dụng vào bài không? |
-|---:|---|---|---|---|---|---|
-| 1 | 2026-06-16 | ChatGPT / Codex | Cập nhật tài liệu member | Sửa 4 file trong folder member theo thông tin cá nhân | Hoàn thiện AI_AUDIT_LOG, CHANGELOG, PROMPTS, REFLECTION | Có |
-| 2 | 2026-06-16 | ChatGPT / Codex | Rà soát repository | Kiểm tra cấu trúc members và các file liên quan | Xác định đúng folder Nguyễn Bùi Quang Vinh và 4 file cần sửa | Có |
-| 3 | 2026-06-16 | ChatGPT / Codex | Chuẩn hóa nội dung | Dựa trên project LuxeWay và quá trình làm việc trước đó | Nội dung được viết gọn, đúng thông tin SWR302/SE20A02/DE190264 | Có |
+> Các prompt từ những phiên trước được ghi ở dạng tóm tắt đúng mục tiêu kỹ thuật; prompt ngày 2026-06-22 được lưu theo yêu cầu hiện tại.
+
+| STT | Ngày | Mục đích | Prompt tóm tắt | Kết quả đã áp dụng |
+|---:|---|---|---|---|
+| 1 | 2026-06-09 | Tích hợp authentication | Kiểm tra auth frontend đang dùng mock và chuyển sang gọi API Spring Boot thật | Hoàn thiện login, register, token storage, `/auth/me`, refresh token |
+| 2 | 2026-06-14 | Sửa quên mật khẩu | Kiểm tra toàn bộ forgot-password/OTP/reset-password và nối frontend với backend | Gửi OTP thật, verify OTP, nhận reset token và đổi mật khẩu |
+| 3 | 2026-06-15 | Phát triển xác minh email | Bổ sung OTP sau đăng ký, chặn đăng nhập khi chưa xác minh và xử lý gửi lại OTP | Có trang nhập OTP, OTP hết hạn, giới hạn thử và kích hoạt user |
+| 4 | 2026-06-15 | Sửa Google OAuth | Tìm nguyên nhân đăng nhập Google không ổn định và sửa đồng bộ phiên người dùng | Kiểm tra audience, hiển thị lỗi cấu hình, fallback từ JWT |
+| 5 | 2026-06-17 | Sửa marketplace | Kiểm tra vì sao danh sách xe/ảnh xe không hiển thị đúng giữa frontend và backend | Fallback xe `AVAILABLE`, chuẩn hóa gallery và thumbnail |
+| 6 | 2026-06-17 | Cải tiến vehicle card | Làm thẻ xe rõ thông tin hơn và cho phép xem nhiều ảnh/đi tới đúng trang chi tiết | Slideshow ảnh, badge, specs, wishlist, routing car/motorbike |
+| 7 | 2026-06-18 | Hoàn thiện booking | Rà soát booking wizard, tổng tiền, dịch vụ bổ sung, thanh toán và dữ liệu giao xe | Luồng nhiều bước, giá VND, extras, tọa độ và delivery fee |
+| 8 | 2026-06-18 | Nâng cấp dashboard | Kết nối các dashboard với service/API và hoàn thiện thao tác theo vai trò | Customer/Owner/Admin Dashboard có dữ liệu và thao tác rõ hơn |
 
 ---
 
-## 5. Prompt chi tiết
+## 5. Prompt chi tiết tiêu biểu
 
-### Prompt số 1
+### Prompt số 1 - Tích hợp authentication thật
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng | 2026-06-16 |
-| Công cụ AI | ChatGPT / Codex |
-| Mục đích | Sửa 4 file tài liệu cá nhân |
-| Phần việc liên quan | Report / Documentation |
-| Mức độ sử dụng | Hỏi chỉnh sửa tài liệu |
+| Ngày sử dụng | 2026-06-09 |
+| Phần việc | Frontend/Backend Authentication |
+| Mức độ sử dụng AI | Hỗ trợ phân tích và triển khai |
 
-#### 5.1. Prompt nguyên văn
+#### Prompt tóm tắt
 
 ```text
-ở phần member tôi có cập nhật 1 folder của tôi hãy sửa lại 4 file có trong đó dựa trên những gì chúng ta đã làm từ trước đến giờ. Tôi sẽ cung cấp cho bạn họ tên, mssv, tên lớp, tên môn:
--họ và tên: Nguyễn Bùi Quang Vinh.
--MSSV:DE190264
--Môn:SWR302
--Lớp: SE20A02
+Rà soát luồng đăng nhập và đăng ký của LuxeWay. Frontend hiện còn dùng dữ liệu mock.
+Hãy kết nối với API backend thật, xử lý ApiResponse, lưu access token/refresh token,
+chuẩn hóa dữ liệu user và giữ đúng trạng thái đăng nhập.
 ```
 
-#### 5.2. Bối cảnh khi viết prompt
+#### Kết quả AI gợi ý
 
 ```text
-Trong repository có thư mục members cho từng thành viên. Folder của em đã có 4 file template
-nhưng chưa được điền nội dung đúng với thông tin cá nhân và quá trình sử dụng AI.
+AI xác định authService cần thay các hàm mock bằng request tới /auth/login, /auth/register,
+/auth/me và /auth/refresh; đồng thời tách logic unwrap response, chuyển đổi User và lưu token.
 ```
 
-#### 5.3. Kết quả AI trả về
+#### Phần đã áp dụng và tự kiểm tra
 
 ```text
-AI đọc cấu trúc thư mục, xác định đúng folder members/Nguyễn Bùi Quang Vinh và cập nhật
-4 file Markdown: AI_AUDIT_LOG.md, CHANGELOG.md, PROMPTS.md, REFLECTION.md.
-```
-
-#### 5.4. Kết quả đã áp dụng vào bài
-
-```text
-Sử dụng nội dung đã chuẩn hóa cho phần thông tin sinh viên, nhật ký dùng AI,
-prompt log, changelog và reflection cá nhân.
-```
-
-#### 5.5. Phần sinh viên đã chỉnh sửa hoặc cải tiến
-
-```text
-Sinh viên cung cấp thông tin chính xác, đọc lại nội dung sau khi AI sửa và đảm bảo nội dung
-phản ánh đúng vai trò member trong project LuxeWay.
-```
-
-#### 5.6. Đánh giá chất lượng prompt
-
-- [x] Prompt rõ ràng
-- [x] Prompt có đủ thông tin cá nhân
-- [x] Prompt nêu đúng số lượng file cần sửa
-- [x] Kết quả AI có thể áp dụng vào bài
-- [x] Kết quả AI cần được kiểm tra lại trước khi nộp
-
----
-
-## 6. Prompt quan trọng nhất
-
-```text
-Prompt quan trọng nhất là prompt yêu cầu sửa 4 file trong thư mục member cá nhân, vì prompt này
-cung cấp đủ họ tên, MSSV, môn học và lớp. Đây là cơ sở để AI cập nhật tài liệu đúng người,
-đúng project và đúng yêu cầu nộp bài.
+Em áp dụng cấu trúc service thật, đối chiếu DTO backend với type frontend, kiểm tra các khóa
+localStorage và điều chỉnh xử lý lỗi để lỗi mạng tạm thời không tự động xóa phiên.
 ```
 
 ---
 
-## 7. Prompt chưa hiệu quả
+### Prompt số 2 - OTP xác minh email và đặt lại mật khẩu
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-14 đến 2026-06-15 |
+| Phần việc | Authentication Security |
+| Mức độ sử dụng AI | Hỗ trợ nhiều |
+
+#### Prompt tóm tắt
 
 ```text
-Nếu chỉ yêu cầu "sửa file member giúp tôi" mà không cung cấp họ tên, MSSV, môn học và lớp,
-AI có thể điền thiếu hoặc suy đoán sai thông tin. Cách cải thiện là luôn cung cấp dữ liệu
-cụ thể và nêu rõ tên các file cần sửa.
+Hoàn thiện hai luồng OTP: xác minh email sau đăng ký và quên mật khẩu.
+OTP phải có 6 chữ số, thời hạn, giới hạn gửi lại, giới hạn nhập sai; OTP/reset token
+không được tái sử dụng. Frontend cần có form nhập mã và thông báo lỗi rõ ràng.
 ```
 
-Prompt sau khi cải thiện:
+#### Kết quả đã áp dụng
 
 ```text
-Hãy sửa 4 file AI_AUDIT_LOG.md, CHANGELOG.md, PROMPTS.md, REFLECTION.md trong folder
-members/Nguyễn Bùi Quang Vinh. Thông tin: Nguyễn Bùi Quang Vinh, DE190264, SWR302, SE20A02.
-Giữ nội dung phù hợp project LuxeWay và ghi rõ AI chỉ hỗ trợ, sinh viên có kiểm tra lại.
+Backend có endpoint gửi/xác minh email OTP, phát reset token sau khi xác minh OTP quên mật khẩu,
+đánh dấu OTP dùng một lần và kích hoạt tài khoản. Frontend có trang verify email, forgot password
+và gọi đúng endpoint thay vì dùng mã mock.
+```
+
+#### Phần sinh viên điều chỉnh
+
+```text
+Em kiểm tra lại trạng thái verified của User, cách trả UserInfo, nội dung lỗi, luồng điều hướng
+sau đăng ký và cách giữ user hiện tại sau khi xác minh thành công.
 ```
 
 ---
 
-## 8. Bài học về cách viết prompt
+### Prompt số 3 - Marketplace và ảnh xe
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-17 |
+| Phần việc | Vehicle Marketplace |
+| Mức độ sử dụng AI | Hỗ trợ phân tích lỗi |
+
+#### Prompt tóm tắt
 
 ```text
-Khi viết prompt cho AI, em cần cung cấp mục tiêu, bối cảnh repository, đường dẫn file,
-thông tin cá nhân chính xác, format mong muốn và yêu cầu kiểm tra lại kết quả. Prompt càng rõ
-thì AI càng ít phải đoán và kết quả càng dễ sử dụng.
+Kiểm tra lỗi marketplace đôi lúc trả danh sách rỗng và ảnh xe hiển thị sai thứ tự.
+Sửa backend để truy vấn rộng vẫn trả xe AVAILABLE; chuẩn hóa thumbnail/gallery.
+Frontend cần xem được nhiều ảnh và điều hướng đúng chi tiết ô tô hoặc xe máy.
+```
+
+#### Kết quả đã áp dụng
+
+```text
+VehicleService có fallback cho truy vấn không kèm bộ lọc, sắp xếp ảnh chính trước,
+dùng thumbnail khi gallery trống. VehicleCard có slideshow và route theo vehicleType.
 ```
 
 ---
 
-## 9. Checklist chất lượng prompt
+### Prompt số 4 - Booking và phí giao xe
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-18 |
+| Phần việc | Booking Flow |
+| Mức độ sử dụng AI | Hỗ trợ thiết kế và debug |
+
+#### Prompt tóm tắt
+
+```text
+Rà soát booking wizard từ chọn ngày đến thanh toán. Đồng bộ điểm nhận/trả, tọa độ,
+quãng đường, thời gian và phí giao xe với backend. Tính lại tổng tiền theo loại xe,
+bảo hiểm, dịch vụ bổ sung, coupon và phí dịch vụ.
+```
+
+#### Kết quả đã áp dụng
+
+```text
+Booking request lưu thêm dữ liệu tuyến đường; backend có logic xác định delivery fee;
+frontend hiển thị bảng giá VND, dịch vụ riêng cho ô tô/xe máy và luồng nhiều bước.
+```
+
+---
+
+## 6. Prompt chưa hiệu quả và cách cải thiện
+
+```text
+Prompt chưa hiệu quả: "Sửa auth giúp tôi" hoặc "Sửa marketplace".
+
+Vấn đề: thiếu triệu chứng, phạm vi frontend/backend, endpoint, dữ liệu mong đợi và điều kiện hoàn thành.
+
+Prompt cải thiện:
+"Rà soát AuthPages.tsx, authService.ts, AuthController.java và AuthService.java. Kiểm tra luồng
+đăng ký -> gửi OTP -> xác minh email -> đăng nhập. Không dùng dữ liệu mock. Hãy nêu nguyên nhân,
+sửa đồng bộ DTO/API và bảo đảm OTP có thời hạn, giới hạn thử và chỉ dùng một lần."
+```
+
+---
+
+## 7. Checklist chất lượng prompt
 
 | Tiêu chí | Đã đạt? | Ghi chú |
 |---|:---:|---|
-| Prompt có mục tiêu rõ ràng | x | Yêu cầu sửa 4 file |
-| Prompt có đủ bối cảnh | x | Có folder member và thông tin cá nhân |
-| Prompt có nêu yêu cầu đầu ra | x | Cập nhật 4 file Markdown |
-| Kết quả AI được kiểm tra lại | x | Đọc lại file sau khi sửa |
-| Prompt quan trọng được ghi lại đầy đủ | x | Đã lưu trong file này |
+| Nêu rõ module/file cần kiểm tra | x | Có frontend và backend |
+| Mô tả triệu chứng hoặc kết quả mong muốn | x | Nêu rõ luồng và lỗi |
+| Yêu cầu không dùng dữ liệu mock | x | Áp dụng cho auth và service |
+| Có tiêu chí bảo mật/logic | x | OTP, token, trạng thái verified |
+| Kết quả AI được đọc và đối chiếu lại | x | So sánh DTO, entity và UI |
 
 ---
 
-## 10. Cam kết sử dụng prompt minh bạch
+## 8. Cam kết sử dụng prompt minh bạch
 
-Em cam kết các prompt quan trọng đã được ghi lại trung thực, không che giấu việc sử dụng AI,
-không nộp nguyên văn nếu chưa kiểm tra và chịu trách nhiệm với nội dung cuối cùng.
+Em cam kết các prompt được ghi theo đúng mục đích đã sử dụng. AI hỗ trợ phân tích và đề xuất; em vẫn đọc, điều chỉnh và chịu trách nhiệm với phần mã nguồn được áp dụng.
 
 | Đại diện sinh viên | Ngày xác nhận |
 |---|---|
-| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-16 |
+| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-22 |
