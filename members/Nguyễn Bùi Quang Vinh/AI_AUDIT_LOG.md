@@ -11,8 +11,8 @@
 | Tên bài tập / Project | LuxeWay - Trusted E-commerce Platform for Vehicle Rental |
 | Tên sinh viên | Nguyễn Bùi Quang Vinh |
 | MSSV | DE190264 |
-| Vai trò | Member |
-| Ngày cập nhật | 2026-06-16 |
+| Vai trò | Member - Frontend/Backend Integration |
+| Thời gian ghi nhận | 2026-06-09 đến 2026-06-22 |
 
 ---
 
@@ -23,7 +23,6 @@
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
 
@@ -32,12 +31,12 @@
 ## 3. Mục tiêu sử dụng AI
 
 ```text
-Em sử dụng AI để hỗ trợ rà soát cấu trúc dự án LuxeWay, đọc hiểu các phần frontend/backend
-đã có, gợi ý cách sửa lỗi, cải thiện giao diện, kiểm tra luồng chạy project và hoàn thiện
-tài liệu cá nhân trong thư mục members.
+Em sử dụng AI để hỗ trợ đọc và đối chiếu code React/TypeScript với Spring Boot, tìm nguyên nhân
+các lỗi tích hợp, đề xuất cách sửa và rà soát tác động giữa frontend, backend, DTO, entity và API.
 
-AI được dùng như công cụ hỗ trợ phân tích, review và đề xuất. Em vẫn kiểm tra lại code,
-đọc nội dung thay đổi, chạy các lệnh build/test khi cần và chịu trách nhiệm với kết quả cuối.
+Các phần chính gồm authentication, OTP, Google OAuth, marketplace, dữ liệu ảnh xe, booking,
+phí giao xe và dashboard. AI không thay thế việc quyết định yêu cầu, kiểm tra code và chịu trách
+nhiệm với kết quả cuối cùng của sinh viên.
 ```
 
 ---
@@ -48,53 +47,164 @@ AI được dùng như công cụ hỗ trợ phân tích, review và đề xuấ
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng | 2026-06-16 |
-| Công cụ AI | ChatGPT / Codex |
-| Mục đích sử dụng | Rà soát và cập nhật tài liệu cá nhân |
-| Phần việc liên quan | Report / Documentation |
-| Mức độ sử dụng | Hỗ trợ một phần |
+| Ngày sử dụng | 2026-06-09 |
+| Mục đích | Tích hợp frontend authentication với backend |
+| Phần việc | Login, register, token, user session |
+| Mức độ sử dụng | Hỗ trợ nhiều |
 
-#### Prompt đã sử dụng
+#### Yêu cầu đã dùng
 
 ```text
-Ở phần member tôi có cập nhật 1 folder của tôi hãy sửa lại 4 file có trong đó dựa trên những gì chúng ta đã làm từ trước đến giờ. Tôi sẽ cung cấp cho bạn họ tên, mssv, tên lớp, tên môn:
-- họ và tên: Nguyễn Bùi Quang Vinh.
-- MSSV: DE190264
-- Môn: SWR302
-- Lớp: SE20A02
+Rà soát auth frontend đang dùng mock, chuyển sang API backend thật và chuẩn hóa việc lưu
+access token, refresh token và thông tin user.
 ```
 
-#### Kết quả AI gợi ý
+#### Kết quả AI gợi ý và phần đã sử dụng
 
 ```text
-AI đọc thư mục members/Nguyễn Bùi Quang Vinh, kiểm tra 4 file AI_AUDIT_LOG.md,
-CHANGELOG.md, PROMPTS.md, REFLECTION.md và thay nội dung template bằng nội dung
-đã điền thông tin sinh viên, môn học, lớp, project LuxeWay và quá trình sử dụng AI.
-```
-
-#### Phần sinh viên đã sử dụng từ AI
-
-```text
-Em sử dụng cấu trúc trình bày, bảng thông tin, phần mô tả quá trình dùng AI,
-phần kiểm chứng kết quả AI và phần cam kết học thuật.
-```
-
-#### Phần sinh viên tự chỉnh sửa hoặc cải tiến
-
-```text
-Em cung cấp thông tin cá nhân chính xác gồm họ tên, MSSV, lớp và môn học.
-Em kiểm tra lại nội dung để đảm bảo phản ánh đúng quá trình làm việc với project LuxeWay.
+AI gợi ý tách hàm unwrap ApiResponse, ánh xạ User và thay các hàm mock bằng endpoint thật.
+Em sử dụng cấu trúc này, đối chiếu với AuthDTOs/AuthController và điều chỉnh kiểu dữ liệu,
+URL ảnh, role và khóa localStorage cho phù hợp LuxeWay.
 ```
 
 #### Minh chứng
 
-| Loại minh chứng | Nội dung |
+| Loại | Nội dung |
 |---|---|
-| File liên quan | members/Nguyễn Bùi Quang Vinh/AI_AUDIT_LOG.md |
-| File liên quan | members/Nguyễn Bùi Quang Vinh/CHANGELOG.md |
-| File liên quan | members/Nguyễn Bùi Quang Vinh/PROMPTS.md |
-| File liên quan | members/Nguyễn Bùi Quang Vinh/REFLECTION.md |
-| Kết quả chạy/test | Đã rà soát bằng lệnh đọc file và tìm kiếm trong repository |
+| Frontend | `src/Front_end/src/services/authService.ts` |
+| Frontend | `src/Front_end/src/store/index.ts` |
+| Backend | `src/Back_end/src/main/java/com/luxeway/controller/AuthController.java` |
+
+---
+
+### Lần sử dụng AI số 2
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-14 |
+| Mục đích | Hoàn thiện quên mật khẩu bằng OTP |
+| Phần việc | Forgot password, verify OTP, reset password |
+| Mức độ sử dụng | Hỗ trợ nhiều |
+
+#### Kết quả
+
+```text
+Luồng frontend gọi backend để gửi OTP, xác minh mã và nhận reset token tạm thời.
+Mật khẩu chỉ được đổi bằng token còn hạn; OTP bị hủy sau khi xác minh thành công.
+```
+
+#### Phần sinh viên kiểm tra/cải tiến
+
+```text
+Em kiểm tra payload giữa frontend và backend, bổ sung confirmPassword, xử lý lỗi OTP hết hạn
+và bảo đảm frontend không còn so sánh với mã OTP mock cố định.
+```
+
+#### Minh chứng
+
+| Loại | Nội dung |
+|---|---|
+| Frontend | `AuthPages.tsx`, `authService.ts` |
+| Backend | `AuthController.java`, `AuthService.java`, `AuthDTOs.java` |
+
+---
+
+### Lần sử dụng AI số 3
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-15 |
+| Mục đích | Xác minh email và sửa Google OAuth |
+| Phần việc | Email OTP, account activation, OAuth session |
+| Mức độ sử dụng | Hỗ trợ nhiều |
+
+#### Kết quả
+
+```text
+Tài khoản đăng ký local được tạo với verified=false và nhận OTP 6 chữ số.
+OTP được hash, hết hạn sau 5 phút, giới hạn gửi lại và số lần nhập sai. Google OAuth
+được kiểm tra audience; frontend có thông báo khi chưa cấu hình và fallback phiên từ JWT.
+```
+
+#### Phần sinh viên kiểm tra/cải tiến
+
+```text
+Em điều chỉnh luồng điều hướng sau đăng ký, dữ liệu UserInfo trả về sau xác minh,
+cách cập nhật user trong store và thông báo lỗi cho người dùng.
+```
+
+#### Minh chứng
+
+| Loại | Nội dung |
+|---|---|
+| Frontend | `AuthPages.tsx`, `OAuth2RedirectHandler.tsx` |
+| Backend | `AuthService.java`, `AuthController.java` |
+
+---
+
+### Lần sử dụng AI số 4
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-17 |
+| Mục đích | Sửa marketplace và dữ liệu ảnh xe |
+| Phần việc | Vehicle search, filters, gallery, vehicle card |
+| Mức độ sử dụng | Hỗ trợ phân tích/debug |
+
+#### Kết quả
+
+```text
+Backend có fallback cho truy vấn inventory rộng để không trả danh sách rỗng ngoài ý muốn.
+Ảnh xe được sắp xếp theo ảnh chính và sortOrder; thumbnail được dùng khi gallery trống.
+Frontend hiển thị slideshow ảnh và điều hướng đúng trang chi tiết theo loại xe.
+```
+
+#### Phần sinh viên kiểm tra/cải tiến
+
+```text
+Em đối chiếu Vehicle entity, DTO response và type Vehicle frontend; kiểm tra trường images,
+thumbnailUrl, vehicleType, specs, rating và location trước khi hiển thị.
+```
+
+#### Minh chứng
+
+| Loại | Nội dung |
+|---|---|
+| Backend | `VehicleService.java`, `VehicleRepository.java` |
+| Frontend | `vehicleService.ts`, `VehicleCard.tsx`, `MarketplacePage.tsx` |
+
+---
+
+### Lần sử dụng AI số 5
+
+| Nội dung | Thông tin |
+|---|---|
+| Ngày sử dụng | 2026-06-18 |
+| Mục đích | Hoàn thiện booking và phí giao xe |
+| Phần việc | Booking wizard, route data, delivery fee, extras |
+| Mức độ sử dụng | Hỗ trợ thiết kế/debug |
+
+#### Kết quả
+
+```text
+Booking wizard được mở rộng thành nhiều bước và có bảng tổng tiền. Request booking lưu
+điểm nhận/trả, tọa độ, quãng đường, thời gian và nhà cung cấp bản đồ. Backend ưu tiên phí
+ước tính hợp lệ, tự tính theo bản đồ khi có tọa độ hoặc dùng deliveryFee của xe làm fallback.
+```
+
+#### Phần sinh viên kiểm tra/cải tiến
+
+```text
+Em kiểm tra công thức tổng tiền, đơn vị VND, dịch vụ riêng cho ô tô/xe máy, dữ liệu truyền
+qua route state và ánh xạ các trường mới trong BookingDTO/Booking entity.
+```
+
+#### Minh chứng
+
+| Loại | Nội dung |
+|---|---|
+| Frontend | `BookingWizardPage.tsx`, `bookingService.ts` |
+| Backend | `BookingService.java`, `BookingDTOs.java`, `Booking.java` |
 
 ---
 
@@ -102,31 +212,34 @@ Em kiểm tra lại nội dung để đảm bảo phản ánh đúng quá trình
 
 | Hạng mục | Không dùng AI | AI hỗ trợ ít | AI hỗ trợ nhiều | AI sinh chính | Ghi chú |
 |---|:---:|:---:|:---:|:---:|---|
-| Phân tích yêu cầu |  | x |  |  | Dùng để làm rõ cách ghi tài liệu |
-| Thiết kế giao diện |  | x |  |  | Gợi ý cải thiện nếu cần |
-| Code frontend/backend |  | x |  |  | AI hỗ trợ review và sửa lỗi nhỏ |
-| Debug lỗi |  |  | x |  | Hỗ trợ đọc lỗi, đề xuất hướng xử lý |
-| Kiểm thử sản phẩm |  | x |  |  | Gợi ý lệnh build/test và checklist |
-| Viết báo cáo |  |  | x |  | Hỗ trợ cấu trúc nội dung |
+| Phân tích yêu cầu |  | x |  |  | Em xác định phạm vi và tiêu chí |
+| Code frontend |  |  | x |  | AI hỗ trợ đọc luồng và đề xuất sửa |
+| Code backend |  |  | x |  | AI hỗ trợ DTO/service/security |
+| Debug tích hợp |  |  | x |  | Đối chiếu request/response và state |
+| Thiết kế UI |  | x |  |  | AI gợi ý cấu trúc, em điều chỉnh |
+| Viết báo cáo |  |  | x |  | Tổng hợp từ minh chứng mã nguồn |
 
 ---
 
-## 6. Các lỗi hoặc hạn chế từ AI
+## 6. Lỗi hoặc hạn chế từ AI
 
-| STT | Lỗi/hạn chế từ AI | Cách phát hiện | Cách xử lý/cải tiến |
+| STT | Lỗi/hạn chế | Cách phát hiện | Cách xử lý |
 |---:|---|---|---|
-| 1 | AI có thể suy đoán sai thông tin môn học/project nếu không có dữ liệu | So sánh với thông tin do sinh viên cung cấp | Ưu tiên dùng thông tin người dùng cung cấp: SWR302, SE20A02, DE190264 |
-| 2 | AI có thể đề xuất nội dung quá chung chung | Đọc lại reflection và prompt log | Chỉnh nội dung theo đúng project LuxeWay |
-| 3 | AI không thay thế việc kiểm tra file thật | Kiểm tra trực tiếp repository | Đọc file, tìm kiếm bằng `rg`, xác nhận đường dẫn trước khi sửa |
+| 1 | Có thể suy đoán sai cấu trúc `ApiResponse` | So với controller và dữ liệu trả về | Viết hàm unwrap và kiểm tra từng endpoint |
+| 2 | Có thể đề xuất field không tồn tại trong DTO/entity | TypeScript/Java báo lỗi hoặc đọc model | Đồng bộ type, DTO và entity trước khi dùng |
+| 3 | Có thể làm mất phiên khi API hồ sơ lỗi | Kiểm tra luồng khởi tạo auth | Giữ cached session và chỉ logout khi token thật sự không hợp lệ |
+| 4 | Có thể dùng giải pháp OTP đơn giản chưa đủ production | Review bảo mật | Thêm thời hạn, rate limit, số lần thử, hash và one-time use |
+| 5 | Có thể ghi nhận quá rộng so với đóng góp thật | Đối chiếu diff và file | Chỉ ghi các thay đổi có minh chứng trong source |
 
 ---
 
 ## 7. Kiểm chứng kết quả AI
 
 ```text
-Em kiểm chứng bằng cách đọc lại các file Markdown sau khi cập nhật, đối chiếu với thông tin
-cá nhân đã cung cấp và đảm bảo nội dung không mâu thuẫn với project LuxeWay. Khi AI đề xuất
-code hoặc tài liệu, em không nộp nguyên văn nếu chưa đọc lại và hiểu nội dung.
+Em kiểm chứng bằng cách đọc diff và mã nguồn của các module liên quan, đối chiếu frontend
+service với backend controller/service/DTO, kiểm tra dữ liệu lưu trong store và xem các
+trường mới có được ánh xạ đầy đủ hay không. Em không sử dụng nguyên văn đề xuất nếu chưa
+hiểu tác động tới luồng đăng nhập, marketplace hoặc booking.
 ```
 
 ---
@@ -134,28 +247,18 @@ code hoặc tài liệu, em không nộp nguyên văn nếu chưa đọc lại v
 ## 8. Đóng góp cá nhân
 
 ```text
-Nguyễn Bùi Quang Vinh - DE190264 chịu trách nhiệm cập nhật thư mục member cá nhân,
-ghi nhận minh bạch quá trình sử dụng AI, rà soát nội dung tài liệu và đảm bảo các phần
-đã nộp có thể giải thích lại được.
+Nguyễn Bùi Quang Vinh - DE190264 tham gia tích hợp và hoàn thiện các luồng frontend/backend,
+đặc biệt là authentication, OTP, OAuth và các phần liên quan đến dữ liệu hiển thị/đặt xe.
+Em chịu trách nhiệm đọc lại thay đổi, điều chỉnh theo cấu trúc LuxeWay và ghi nhận minh bạch
+phạm vi AI đã hỗ trợ.
 ```
 
 ---
 
-## 9. Reflection cuối bài
+## 9. Cam kết học thuật
 
-```text
-AI hỗ trợ tốt ở việc gợi ý cấu trúc tài liệu, đọc hiểu project nhanh hơn và đưa ra checklist
-kiểm tra. Tuy nhiên, phần quyết định cuối cùng vẫn do em thực hiện: xác nhận thông tin cá nhân,
-kiểm tra nội dung, đánh giá tính phù hợp và chịu trách nhiệm với sản phẩm nộp.
-```
-
----
-
-## 10. Cam kết học thuật
-
-Em cam kết rằng nội dung AI hỗ trợ đã được ghi nhận trung thực, không nộp kết quả AI khi chưa
-kiểm tra, có khả năng giải thích các phần đã nộp và chịu trách nhiệm với sản phẩm cuối cùng.
+Em cam kết nội dung AI hỗ trợ được ghi nhận trung thực; có khả năng giải thích các thay đổi và chịu trách nhiệm với sản phẩm cuối cùng.
 
 | Đại diện sinh viên | Ngày xác nhận |
 |---|---|
-| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-16 |
+| Nguyễn Bùi Quang Vinh - DE190264 | 2026-06-22 |
